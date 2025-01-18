@@ -1,9 +1,10 @@
 # **TOP-STOCKS-FULL-ANALYSIS-RECOMMENDATION-SYSTEM-PREDICTION-AI-Agents-APP-PROJECT** 🚀  
-
-
-
-# **TOP-STOCKS-FULL-ANALYSIS-RECOMMENDATION-SYSTEM-PREDICTION-AI-Agents-APP-PROJECT** 🚀  
-
+![pg1](https://github.com/user-attachments/assets/fba4ea36-600d-45ff-b285-5adc6c4ac9d7)
+![pg3](https://github.com/user-attachments/assets/9782a974-9733-40a2-b5ff-2f3d3b1ce55b)
+![pg4](https://github.com/user-attachments/assets/078a015c-5cc0-4df2-a19f-5f32adaa293d)
+![pg5](https://github.com/user-attachments/assets/3cb32b44-35db-434b-9cd3-a7965b9d2eaa)
+![pg6](https://github.com/user-attachments/assets/3429fac4-26c8-4cfd-a777-1353673fa801)
+![pg7](https://github.com/user-attachments/assets/52d31133-8266-40c2-8f8a-0148d60cc585)
 
 ---
 
