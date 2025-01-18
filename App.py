@@ -27,6 +27,30 @@ st.set_page_config(
     page_icon="📈",
     layout="wide"
 )
+st.sidebar.title("Stock Market Analysis")
+
+# Add stock png to sidebar
+stock_png_path = "stock.png"  # Ensure this file is in the same directory as your script
+try:
+    st.sidebar.image("stock.png", use_container_width=True)
+except FileNotFoundError:
+    st.sidebar.warning("stock.png. Please check the file path.")
+
+# Add market png to sidebar
+market_png_path = "market.png"  # Ensure this file is in the same directory as your script
+try:
+    st.sidebar.image("market.png", use_container_width=True)
+except FileNotFoundError:
+    st.sidebar.warning("market.png. Please check the file path.")
+
+st.sidebar.title("Developer: Abhishek Kumar")
+
+# Add my jpg to sidebar
+my_jpg_path = "my.jpg"  # Ensure this file is in the same directory as your script
+try:
+    st.sidebar.image("my.jpg", use_container_width=True)
+except FileNotFoundError:
+    st.sidebar.warning("my.jpg. Please check the file path.")
 
 
 def initialize_agents():
@@ -95,16 +119,20 @@ def feedback_section():
         st.session_state.feedback_submitted = False
         st.session_state.feedback = None
 
-    # Feedback form
+    # Display feedback form only if feedback is not submitted
     if not st.session_state.feedback_submitted:
         feedback = st.radio(
             "Was this analysis helpful?", options=["Yes", "No", "Needs Improvement"]
         )
-        if st.button("Submit Feedback", key="submit_feedback"):
+        submit_button = st.button("Submit Feedback", key="submit_feedback")
+        
+        # If submit button is clicked, update session state
+        if submit_button:
             st.session_state.feedback_submitted = True
             st.session_state.feedback = feedback
+            st.rerun()  # This forces a rerun, preserving the feedback state
     else:
-        # Display a thank-you message based on feedback
+        # Show a thank-you message based on feedback
         feedback = st.session_state.feedback
         if feedback == "Yes":
             st.success("""
@@ -129,8 +157,9 @@ def feedback_section():
             """)
 
         # Option to reset feedback submission
-        if st.button("Submit Another Feedback", key="reset_feedback"):
-            st.session_state.feedback_submitted = False
+        reset_button = st.button("Submit Another Feedback", key="reset_feedback")
+        if reset_button:
+            st.session_state.feedback_submitted = False  # Reset feedback state
 
 
 def main():
