@@ -46,7 +46,7 @@ except FileNotFoundError:
 st.sidebar.title("Developer: Abhishek Kumar")
 
 # Add my jpg to sidebar
-my_jpg_path = "pic.jpg"  # Ensure this file is in the same directory as your script
+pic_jpg_path = "pic.jpg"  # Ensure this file is in the same directory as your script
 try:
     st.sidebar.image("pic.jpg", use_container_width=True)
 except FileNotFoundError:
