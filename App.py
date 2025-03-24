@@ -43,7 +43,7 @@ try:
 except FileNotFoundError:
     st.sidebar.warning("market.png. Please check the file path.")
 
-st.sidebar.title("Developer: Abhishek Kumar")
+st.sidebar.title("👨‍💻Developer: Abhishek💖Kumar")
 
 # Add my jpg to sidebar
 pic_jpg_path = "pic.jpg"  # Ensure this file is in the same directory as your script
