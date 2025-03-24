@@ -48,7 +48,7 @@ st.sidebar.title("Developer: Abhishek Kumar")
 # Add my jpg to sidebar
 my_jpg_path = "pic.jpg"  # Ensure this file is in the same directory as your script
 try:
-    st.sidebar.image("my.jpg", use_container_width=True)
+    st.sidebar.image("pic.jpg", use_container_width=True)
 except FileNotFoundError:
     st.sidebar.warning("pic.jpg. Please check the file path.")
 
